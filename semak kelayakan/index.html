@@ -1,0 +1,346 @@
+<!doctype html>
+
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semak Kelayakan Rumah</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin:0;
+  font-family:Poppins;
+  background: radial-gradient(circle at top, #111, #000);
+  color:white;
+}
+
+/* CONTAINER */
+.container {
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+/* ANIMATION */
+.fade {
+  opacity:0;
+  transform:translateY(40px);
+  transition:1s;
+}
+.fade.show {
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* LOGO */
+.logo {
+  display:block;
+  margin:auto;
+  width:240px;
+  filter: drop-shadow(0 0 10px rgba(255,204,0,0.4));
+}
+
+/* TEXT */
+h1 {
+  font-family::'Courier New', Courier, monospace
+  font-weight: 1000;
+  text-align:center;
+  font-size:clamp(2.5rem,7vw,4rem);
+  color:#ffd52f;
+  margin-top:20px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #ffd52f;
+}
+
+p{
+
+  font-size: 24px;
+}
+
+.sub {
+  text-align:center;
+  color:#ccc;
+  margin-bottom:40px;
+  font-size:1.5rem;
+}
+
+/* CARD */
+.card {
+  background:#111;
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:30px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
+  transition:0.3s;
+}
+.card:hover {
+  transform:translateY(-5px);
+}
+
+/* HIGHLIGHT */
+.highlight {
+  background:#ffcc00;
+  color:black;
+  padding:3px 8px;
+  border-radius:5px;
+  font-weight:bold;
+}
+
+/* FORM */
+input, select {
+  width:100%;
+  padding:14px;
+  margin:10px 0;
+  border-radius:8px;
+  border:1px solid #333;
+  background:#1a1a1a;
+  color:white;
+}
+
+.row {
+  display:flex;
+  gap:10px;
+}
+@media(max-width:600px){
+  .row{flex-direction:column;}
+}
+
+/* BUTTON */
+button {
+  width:100%;
+  padding:20px;
+  background:linear-gradient(135deg,#ffcc00,#ffd633);
+  border:none;
+  font-weight:900;
+  font-size:1.2rem;
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.3s;
+  
+}
+button:hover {
+  transform:scale(1.05);
+  box-shadow:0 10px 30px rgba(255,204,0,0.4);
+}
+
+/* WHATSAPP */
+.wa {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  color:rgb(0, 0, 0);
+  font-weight:bold;
+}
+
+/* POPUP */
+.popup {
+  position:fixed;
+  bottom:90px;
+  left:20px;
+  background:#111;
+  padding:15px;
+  border-radius:10px;
+  display:none;
+}
+
+/* LOADING */
+.loading {
+  display:none;
+  text-align:center;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- LOGO -->
+
+<img src="logooda2.png" class="logo fade">
+
+<!-- HERO SECTION -->
+
+<h1 class="glow-text">SAMPAI BILA NAK BAYARKAN RUMAH ORANG?</h1>
+<style>
+  .glow-text{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 1000;
+    text-shadow: 0 0 5px #000000,0 0 20px #ffd700,0 0 20px #ffd700,0 0 40px #ffd700;
+  }
+</style>
+<p class="sub">
+Setiap bulan anda bagi duit kepada landlord…  
+sedangkan rumah sendiri masih “impian yang tak jadi realiti”.
+</p>
+
+<!-- PAIN -->
+
+<div class="card fade">
+<h2>REALITI PAHIT YANG RAMAI TAK SEDAR 😰</h2>
+
+<p>
+Bayar sewa RM1,200 sebulan bukan sekadar “kos hidup”…  
+tapi <b>RM14,400 setahun hilang tanpa jejak.</b>
+</p>
+
+<p>
+Dalam 10 tahun → RM144,000  
+<b>duit tu cukup untuk downpayment rumah sendiri 😔</b>
+</p>
+
+<p>
+Masalahnya bukan anda tak mampu…  
+tapi anda tak tahu <b>berapa sebenarnya anda layak beli rumah</b>.
+</p>
+</div>
+
+<!-- AGITATE -->
+
+<div class="card fade">
+<h2>KENAPA RAMAI MASIH TAK BELI RUMAH?</h2>
+
+<p>
+❌ Tunggu gaji cukup  
+❌ Tunggu “masa sesuai”  
+❌ Ingat tak layak loan  
+</p>
+
+<p>
+Hakikat sebenar?
+<b>Ramai sebenarnya LAYAK tanpa mereka sedar.</b>
+</p>
+
+<p>
+Yang buat mereka terus menyewa bukan bank…  
+tapi <b>TIADA SEMAKAN KELAYAKAN YANG BETUL</b>.
+</p>
+</div>
+
+<!-- SOLUTION -->
+
+<div class="card fade">
+<h2>SOLUSI KAMI </h2>
+<p>Kami bantu semak kelayakan anda secara PERCUMA</p>
+<p>✔ Kira kelayakan loan</p>
+<p>✔ Semak DSR</p>
+<p>✔ Cadangkan rumah sesuai bajet</p>
+
+<h1>Kami Bantu Anda Semak Kelayakan Sebenar</h1> 
+
+<p>
+Tak perlu teka-teka lagi.  
+Kami bantu anda tahu angka sebenar bank boleh bagi.
+</p>
+
+<p>
+✔ Semak kelayakan loan  
+✔ Kira Debt Service Ratio (DSR)  
+✔ Cadang rumah ikut bajet sebenar  
+✔ Free consultation (tiada caj tersembunyi)
+</p>
+
+<p>
+<b>Anda cuma isi form → kami buat kiraan untuk anda.</b>
+</p>
+</div>
+
+<!-- FORM -->
+<div class="form-wrapper">
+  <div class="form-header">
+    <h1>JOM SEMAK KELAYAKKAN ANDA</h1>
+    <p>Isi maklumat & kami akan hubungi anda dalam 24 jam.</p>
+  </div>
+
+  <form action="https://script.google.com/macros/s/AKfycbwuBsi-94fL8Usi1YZJw6MDZkPi093oHpRl_u_lAroYewpHgJ-zADGcuZRayMd0K3bB/exec" method="POST">
+
+    <label>Nama</label>
+    <input type="text" name="nama" required>
+
+    <label>WhatsApp</label>
+    <input type="tel" name="whatsapp" required>
+
+    <div class="row">
+      <div style="flex:1">
+        <label>Gaji</label>
+        <input type="number" name="gaji" required>
+      </div>
+      <div style="flex:1">
+        <label>Komitmen</label>
+        <input type="number" name="komitmen" required>
+      </div>
+    </div>
+
+    <label>Sektor</label>
+    <select name="sektor" required>
+      <option value="">Pilih</option>
+      <option>Kerajaan</option>
+      <option>Swasta</option>
+      <option>Bisnes</option>
+    </select>
+
+    <label>Lokasi</label>
+    <input type="text" name="lokasi">
+
+    <button class="btn-submit">
+      YA! SAYA NAK RUMAH SENDIRI
+      <span class="btn-subtitle">Klik untuk semak kelayakan PERCUMA</span>
+    </button>
+
+  </form>
+</div>
+
+<!-- WHATSAPP -->
+
+<a class="wa" href="https://wa.me/601165655833?text=Hai%20Meerul,%20Saya%20nak%20semak%20kelayakkan%20segera" target="_blank">WhatsApp Kami</a>
+
+<!-- POPUP -->
+
+<div class="popup" id="popup"></div>
+
+<script>
+
+// ANIMATION
+const fades = document.querySelectorAll('.fade');
+window.onload = () => {
+  fades.forEach((el,i)=>{
+    setTimeout(()=>el.classList.add('show'), i*200);
+  });
+};
+
+// SUBMIT
+document.getElementById("form").addEventListener("submit", function(e){
+  e.preventDefault();
+  document.querySelector(".loading").style.display="block";
+
+  setTimeout(()=>{
+    window.location.href="https://wa.me/601165655833?text=Saya$nak$semak$kelayakan$rumah";
+  },1500);
+});
+
+// POPUP
+const names = ["Nazri","Salina","Adam Ryan","Aiman","Farah","Shukor","Azlie",];
+function popup(){
+  const el=document.getElementById("popup");
+  el.innerHTML = names[Math.floor(Math.random()*names.length)] + " baru sahaja semak kelayakan";
+  el.style.display="block";
+  setTimeout(()=>el.style.display="none",3000);
+}
+setInterval(popup,5000);
+
+</script>
+
+</body>
+</html>
