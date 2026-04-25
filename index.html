@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ms">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fennec Realty | Rumah Pertama Anda</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- STICKY WHATSAPP BUTTON -->
+  <a
+    href="https://wa.me/601165655833?text=Hi%20Meerul%2C%20saya%20nak%20rumah%20pertama"
+    class="whatsapp-float"
+    target="_blank"
+  >
+    💬 WhatsApp
+  </a>
+
+  <body>
+    
+    <!-- NAV -->
+    <header class="nav">
+  <div class="logo-wrapper">
+
+    <img src="IMG_3882.JPG.jpeg" alt="Team Logo" class="logo-img">
+    <img src="logood.png" alt="Team Logo" class="logo-od">
+   
+    
+    <div class="logo-text">
+      ONE DREAM LEGACY REALTY SDN. BHD | FENNEC EMPIRE
+    </div>
+
+  </div>
+</header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="glass">
+        <h1>MILIKI RUMAH PERTAMA ANDA SEKARANG</h1>
+        <p>
+          Beli rumah bukan bila ada masa… tapi bila ada STRATEGI yang betul.
+        </p>
+
+        <button onclick="scrollToForm()">Saya Nak Rumah</button>
+      </div>
+    </section>
+
+    <!-- VALUE -->
+    <section class="section">
+      <h2>KENAPA PERLU BELI SEKARANG?</h2>
+
+      <div class="grid">
+        <div class="card">
+          📈 Harga hartanah jarang turun dalam jangka panjang. Setiap tahun,
+          harga akan meningkat sedikit demi sedikit.Rumah yang anda mampu beli
+          hari ini, mungkin sudah di luar bajet tahun depan.
+        </div>
+        <div class="card">
+          🏦 Kadar faedah bank masih dalam keadaan terkawal berbanding masa
+          depan yang tidak pasti.Bila kadar naik, ansuran bulanan juga akan
+          meningkat.
+        </div>
+        <div class="card">
+          ⏳ Ramai pembeli rugi bukan sebab tak mampu beli, tapi sebab terlalu
+          lama tunggu masa “perfect”.Masa perfect itu sebenarnya sekarang.
+        </div>
+        <div class="card">
+          🎯 Setiap bulan anda bayar sewa, duit itu hilang terus.
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN / GAIN -->
+    <section class="section">
+      <h2>PAIN VS GAIN</h2>
+
+      <div class="grid">
+        <div class="card danger">
+          ❌ Pain<br />
+          Terlepas rumah bagus sebab tunggu terlalu lama
+        </div>
+
+        <div class="card success">
+          ✅ Gain<br />
+          Lock harga sekarang & pilih rumah terbaik
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section">
+      <h1>SIAPA SAYA?</h1>
+
+      <div class="about glass">
+        <img src="IMG_3469.JPEG" alt="Meerul" />
+        <H1>MEERUL | REN53156</H1>
+
+        <p>
+          " Saya merupakan perunding hartanah berdaftar bersama One Dream Legacy
+          dan telah memulakan kerjaya sejak tahun 2020. Sehingga hari ini, saya
+          telah berjaya membantu lebih daripada 200 pemilik rumah menjual
+          hartanah mereka serta membantu pembeli memiliki rumah pertama dan
+          seterusnya dengan lebih mudah dan terancang. "
+        </p>
+        <h2>JIKA ANDA RASA</h2>
+        <p>"RUMAH SUSAH NAK JUAL</p>
+        <p>"TAK PASTI KELAYAKAN BELI RUMAH"</p>
+        <p>"TAK FAHAM PROSES LOAN & DOKUMEN"</p>
+        <p>
+          " Saya boleh bantu permudahkan semuanya dari A sampai Z. Dengan
+          strategi pemasaran yang tepat dan pengalaman handle pelbagai kes,
+          fokus saya adalah memastikan rumah anda terjual dengan cepat dan
+          pembeli pula membeli dengan yakin tanpa risiko. Klik sekarang untuk
+          semak kelayakan atau dapatkan konsultasi percuma bersama saya. "
+        </p>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="section" id="formSection">
+      <h2>Dapatkan Consultation Percuma</h2>
+
+      <form id="leadForm" class="glass form">
+        <input type="text" id="name" placeholder="Nama Penuh" required />
+        <input type="tel" id="phone" placeholder="No Telefon" required />
+
+        <select id="budget" required>
+          <option value="">Pilih Bajet</option>
+          <option>Below RM300k</option>
+          <option>RM300k - RM500k</option>
+          <option>RM500k - RM800k</option>
+          <option>Above RM800k</option>
+        </select>
+
+        <textarea
+          id="area"
+          placeholder="Area pilihan (JB, Skudai, Kulai...)"
+          required
+        ></textarea>
+
+        <button type="submit">WhatsApp Sekarang</button>
+      </form>
+    </section>
+
+    <footer>© 2019 Fennec Realty</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

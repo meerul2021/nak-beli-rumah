@@ -1,0 +1,191 @@
+/* BASE */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: radial-gradient(circle at top, #0a0a0a, #000);
+  color: #f5d76e;
+}
+
+h1 {
+  font-size: 38px;
+  background: linear-gradient(90deg, #ffd700, #fff3b0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* HEADER LOGO */
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-od {
+  width: 190px;
+  height: 140px;
+  object-fit: contain;
+}
+.logo-img {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffd700;
+}
+
+/* STICKY WHATSAPP BUTTON */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ffd700, #b8860b);
+  color: black;
+  padding: 14px 18px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+}
+/* NAV */
+.nav {
+  padding: 15px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 215, 0, 0.15);
+  padding: 40px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* BUTTON */
+button {
+  background: #ffd700;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* SECTION */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 15px;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 18px;
+  border-radius: 12px;
+  border-left: 3px solid #ffd700;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ABOUT */
+.about img {
+  width: 320px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ffd700;
+}
+
+/* FORM */
+.form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffd700;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.6;
+}
+
+/* ANIMATION */
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fade 0.8s forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
